@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="445" style="border:3px solid black ; background-color: black"
+>
+
+Your browser does not support the HTML canvas tag.
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "35px ComicSans";
+ctx.fillStyle = "white";
+ctx.strokeStyle = "white";
+ctx.textAlign = "center";
+
+ctx.fillText("Hesap Makinesi", 250, 50);
+ctx.textBaseline = "middle";
+ctx.fillText("c", 445, 120);
+ctx.fillText("/", 445, 190);
+ctx.fillText("-", 445, 260);
+ctx.fillText("+", 445, 330);
+ctx.fillText("*", 445, 400);
+
+ctx.fillText("1",75,190);
+ctx.fillText("4",75,260);
+ctx.fillText("7",75,330);
+ctx.fillText(".",75,400);
+
+ctx.fillText("2",205,190);
+ctx.fillText("5",205,260);
+ctx.fillText("8",205,330);
+ctx.fillText("0",205,400);
+
+ctx.fillText("3",335,190);
+ctx.fillText("6",335,260);
+ctx.fillText("9",335,330);
+ctx.fillText("=",335,400);
+
+
+ctx.beginPath();
+
+ctx.rect(5,5,490,70); // Başlık Alanı
+ctx.rect(5,80,490,360); // Hesaplama Alanı
+
+ctx.rect(15,90,380,60); //Ekran
+
+ctx.rect(15,160,120,60);
+ctx.rect(15,230,120,60);
+ctx.rect(15,300,120,60);
+ctx.rect(15,370,120,60);
+
+ctx.rect(145,160,120,60);
+ctx.rect(145,230,120,60);
+ctx.rect(145,300,120,60);
+ctx.rect(145,370,120,60);
+
+ctx.rect(275,160,120,60);
+ctx.rect(275,230,120,60);
+ctx.rect(275,300,120,60);
+ctx.rect(275,370,120,60);
+
+ctx.rect(405,90,80,60);
+ctx.rect(405,160,80,60);
+ctx.rect(405,230,80,60);
+ctx.rect(405,300,80,60);
+ctx.rect(405,370,80,60);
+
+ctx.stroke();
+
+
+</script>
+
+</body>
+</html>
+
